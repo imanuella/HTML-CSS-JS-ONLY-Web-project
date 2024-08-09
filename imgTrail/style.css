@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(31, 38, 48);
+    height: 50vmax;
+    margin: 0;
+    overflow: hidden;
+}
+
+.image {
+    width: 30vh;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    visibility: hidden; 
+    transition: visibility 0s, opacity 0.1s ease-in-out; 
+    opacity: 0; 
+}
+
+.image[data-status="inactive"] {
+    visibility: hidden; 
+    opacity: 0; 
+}
+
+.image[data-status="active"] {
+    visibility: visible; 
+    opacity: 1; 
+    z-index: 1; 
+}
+
+.meta-link {
+    color: aliceblue;
+    align-items: center;
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.719);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    bottom: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;  
+    display: inline-flex;
+    padding: 10px 20px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    /* transform: translateX(-100%);
+    transform: translateY(1200%); */
+    transform: translateY(50%);
+    transition: background-color 400ms, border-color 400ms;
+    z-index: 10009;
+  }
