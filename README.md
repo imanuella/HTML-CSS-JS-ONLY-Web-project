@@ -11,3 +11,6 @@ This is a list of simple web project built only using `html`, `css` & `js`.
 
 ## Mouse reveal
 <img src="gif\scroll.gif" alt="moserev" width="500"/>
+
+## HTML Canvas - Particle animaton
+<img src="gif\pixani.gif" alt="pixani" width="500"/>
